@@ -13,7 +13,6 @@ struct AboutView: View {
     let defaultURL = URL(string: "https://www.google.com")!
     let coingeckoURL = URL(string: "https://www.coingecko.com")!
     let youtubeURL = URL(string: "https://www.youtube.com/c/swiftfulthinking")!
-    let personalURL = URL(string: "https://www.github.com/lswarss")!
 
     var body: some View {
         NavigationView {
@@ -68,7 +67,6 @@ extension AboutView {
                     .resizable()
                     .frame(width: 80, height: 80)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                // swiftlint:disable:next line_length
                 Text("This app was made with companion of @SwiftfulThinking Cource on YouTube and with my own tweaks to it. Like more clean code, testing, theme changes, CI/CD processes etc. It uses MVVM Architecture, Combine and CoreData.")
                     .font(.callout)
                     .fontWeight(.medium)
@@ -106,15 +104,12 @@ extension AboutView {
                     .frame(width: 80, height: 80)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                 Text("""
-                     Łukasz Stachnik, iOS developer with 1 year of exp
-                    commercially at the moment of writing this description.
-                    Passionate about new tech, coffee and all around sport.
+                     Amel Dizdarevic, iOS developer with 3 years of experience working on couple complex high-end apps.
                     """)
                     .font(.callout)
                     .fontWeight(.medium)
             }
             .padding(.vertical)
-            Link("My personal Github page 💻", destination: personalURL)
         }
     }
 
