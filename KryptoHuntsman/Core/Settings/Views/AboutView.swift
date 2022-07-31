@@ -27,8 +27,6 @@ struct AboutView: View {
                         .listRowBackground(Color.theme.background.opacity(0.5))
                     coingeckoSection
                         .listRowBackground(Color.theme.background.opacity(0.5))
-                    developerSection
-                        .listRowBackground(Color.theme.background.opacity(0.5))
                     appSection
                         .listRowBackground(Color.theme.background.opacity(0.5))
                 }
@@ -93,23 +91,6 @@ extension AboutView {
             }
             .padding(.vertical)
             Link("Visit CoinGecko 🦎", destination: coingeckoURL)
-        }
-    }
-
-    private var developerSection : some View {
-        Section(header: Text("Developer")) {
-            VStack(alignment: .leading) {
-                Image("git-mark-dark")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                Text("""
-                     Amel Dizdarevic, iOS developer with 3 years of experience working on couple complex high-end apps.
-                    """)
-                    .font(.callout)
-                    .fontWeight(.medium)
-            }
-            .padding(.vertical)
         }
     }
 
